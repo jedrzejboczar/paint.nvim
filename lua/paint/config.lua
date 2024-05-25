@@ -13,6 +13,8 @@ M.ns = vim.api.nvim_create_namespace("paint.nvim")
 
 --- @class PaintOptions
 M.defaults = {
+  ---@type integer
+  priority = 130, -- above @lsp.type.comment which is 125
   ---@type PaintHighlight[]
   highlights = {
     {
